@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:css": "tailwindcss-cli build -i src/styles/tailwind.css -o dist/tailwind.css",
+    "build:css": "node init && tailwindcss-cli build -i src/styles/tailwind.css -o dist/tailwind.css",
     "watch:css": "tailwindcss-cli build -i src/styles/tailwind.css -o dist/tailwind.css --watch"
   },
   "keywords": [],
