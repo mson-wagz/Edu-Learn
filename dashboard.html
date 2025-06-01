@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./dist/tailwind.css" rel="stylesheet" />
+</head>
+<body class="bg-purple-100">
+    <div class="flex">
+         <!-- Sidebar -->
+     <div class="w-16 bg-white shadow-sm flex flex-col items-center py-4 space-y-6">
+        <a href="dashboard.html"> <div class="w-8 h-8 bg-purple-500 rounded-lg flex items-center justify-center">
+             <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                 <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"/>
+             </svg>
+         </div></a>
+         
+         <a href="courses.html"><div class="nav-item w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center cursor-pointer">
+             <svg class="w-5 h-5 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
+                 <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+             </svg>
+         </div></a>
+         
+         <div class="nav-item w-8 h-8 rounded-lg flex items-center justify-center cursor-pointer hover:bg-gray-100">
+             <svg class="w-5 h-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                 <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
+             </svg>
+         </div>
+         
+         <div class="nav-item w-8 h-8 rounded-lg flex items-center justify-center cursor-pointer hover:bg-gray-100">
+             <svg class="w-5 h-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                 <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"/>
+             </svg>
+         </div>
+         
+         <div class="nav-item w-8 h-8 rounded-lg flex items-center justify-center cursor-pointer hover:bg-gray-100">
+             <svg class="w-5 h-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                 <path d="M5 4a2 2 0 012-2h6a2 2 0 012 2v14l-5-2.5L5 18V4z"/>
+             </svg>
+         </div>
+         
+         <div class="flex-1"></div>
+         
+         <div class="nav-item w-8 h-8 rounded-lg flex items-center justify-center cursor-pointer hover:bg-gray-100">
+             <svg class="w-5 h-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                 <path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"/>
+             </svg>
+         </div>
+         
+         <div class="nav-item w-8 h-8 rounded-lg flex items-center justify-center cursor-pointer hover:bg-gray-100">
+             <svg class="w-5 h-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                 <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"/>
+             </svg>
+         </div>
+         
+         <div class="nav-item w-8 h-8 rounded-lg flex items-center justify-center cursor-pointer hover:bg-gray-100">
+             <svg class="w-5 h-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                 <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                 <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+             </svg>
+         </div>
+         
+         <div class="nav-item w-8 h-8 rounded-lg flex items-center justify-center cursor-pointer hover:bg-gray-100">
+             <svg class="w-5 h-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                 <path d="M10 2L3 7v11a1 1 0 001 1h12a1 1 0 001-1V7l-7-5z"/>
+             </svg>
+         </div>
+         
+         <div class="text-xs text-gray-500 font-medium">ENG</div>
+     </div>
+     <div class="flex-1 bg-gray-100 min-h-screen flex flex-col">
+     <!-- Header -->
+     <header class="bg-white shadow-sm px-6 py-4 flex items-center justify-between">
+         <div class="flex items-center space-x-4">
+             <div class="flex items-center space-x-2">
+                 <div class="w-8 h-8 bg-purple-500 rounded-lg flex items-center justify-center">
+                     <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                         <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3z"/>
+                     </svg>
+                 </div>
+                 <span class="font-semibold text-gray-700">EduLearn</span>
+             </div>
+             
+             <nav class="flex items-center space-x-2 text-sm text-gray-500">
+                 
+             </nav>
+         </div>
+         
+         <div class="flex items-center space-x-4">
+             <div class="relative">
+                 <input type="text" placeholder="Search" class="bg-gray-100 rounded-lg px-4 py-2 pl-10 w-64 text-sm focus:outline-none focus:ring-2 focus:ring-purple-500">
+                 <svg class="w-4 h-4 text-gray-400 absolute left-3 top-3" fill="currentColor" viewBox="0 0 20 20">
+                     <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"/>
+                 </svg>
+                 <svg class="w-4 h-4 text-gray-400 absolute right-3 top-3" fill="currentColor" viewBox="0 0 20 20">
+                     <path fill-rule="evenodd" d="M7 4a3 3 0 016 0v4a3 3 0 11-6 0V4zm4 10.93A7.001 7.001 0 0017 8a1 1 0 10-2 0A5 5 0 015 8a1 1 0 00-2 0 7.001 7.001 0 006 6.93V17H6a1 1 0 100 2h8a1 1 0 100-2h-3v-2.07z" clip-rule="evenodd"/>
+                 </svg>
+             </div>
+             
+             <div class="relative">
+                 <svg class="w-6 h-6 text-gray-400 cursor-pointer" fill="currentColor" viewBox="0 0 20 20">
+                     <path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z"/>
+                 </svg>
+                 <div class="absolute -top-1 -right-1 w-3 h-3 bg-red-500 rounded-full text-xs text-white flex items-center justify-center">0</div>
+             </div>
+             
+             <div class="w-8 h-8 bg-orange-400 rounded-full cursor-pointer"></div>
+         </div>
+     </header>
+
+        <main class="mb-10">
+            <section class="bg-purple-700 flex  justify-start items-start pl-4 ml-8 mt-8 max-w-5xl mr-4 h-fit rounded-md shadow-lg">
+                <div class="flex flex-col justify-start items-start">
+                <h2 class="text-white font-semibold text-lg pl-4 mb-2 mt-5">Greetings , Jane!</h2>
+                <p class="text-white  text-base pl-4">Welcome to Edu Learn.Study with us any
+                    time ,all places and discover the unknown.On the main page there are elements of time management</p>
+                </div>
+                    <img src="images/person1.png" alt="person" class="w-50 h-30 p-5">
+            </section>
+            <div class="flex  items-center relative mt-8 ml-8  rounded-md">
+                <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-500">
+                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                  </span>
+                <input type="text"
+                id="searchInput"
+                 placeholder="Search..." 
+                 class=" rounded-md h-8  px-9 py-1 w-3/4  bg-purple-100 focus:outline-none focus:ring-2 focus:ring-purple-500"></div>
+            <div class="flex justify-between items-center mt-8">
+                <h2 class="text-black font-semibold text-lg mt-2 ml-8 ">Recommended Courses</h2>
+                <a href="courses.html"><p class="w-28 h-8 mr-8 flex items-center justify-center bg-purple-600 text-white rounded-md ">View All</p></a>
+            </div>
+            <div class="flex  gap-5 mr-8">
+                <div class="bg-purple-600 flex text-white w-fit h-fit mt-6 ml-8 p-4 rounded-md shadow-lg course-item">
+                    <div class="flex flex-col">
+                        <h3 class="course-title">Designs</h3>
+                        <p>Grapghic Design</p>
+                        <p>Lessons:45</p>
+                        <p>Duration: 3 months</p>
+                    </div>
+                    <img src="images/lessons.png" alt="lessons inage" class="w-30 h-30 mt-2">
+                </div>
+                <div class="bg-purple-600 flex text-white w-fit h-fit mt-6 ml-8 p-4 rounded-md shadow-lg course-item">
+                    <div class="flex flex-col">
+                        <h3 class="course-title">Programming</h3>
+                        <p>Web Development</p>
+                        <p>Lessons:45</p>
+                        <p>Duration: 3 months</p>
+                    </div>
+                    <img src="images/lessons.png" alt="lessons inage" class="w-30 h-30 mt-2">
+                </div>
+                <div class="bg-purple-600 flex text-white w-fit h-fit mt-6 ml-8 p-4 rounded-md shadow-lg course-item">
+                    <div class="flex flex-col">
+                        <h3 class="course-title">Science</h3>
+                        <p>Physics</p>
+                        <p>Lessons:45</p>
+                        <p>Duration: 3 months</p>
+                    </div>
+                    <img src="images/lessons.png" alt="lessons inage" class="w-30 h-30 mt-2">
+                </div>
+                </div>
+            <div class="flex justify-between items-center mt-8">
+                <h2 class="text-black font-semibold text-lg mt-2 ml-8 ">Featured Courses</h2>
+                <a href="courses.html"><p class="w-28 h-8 mr-8 flex items-center justify-center bg-purple-600 text-white rounded-md ">View All</p></a>
+            </div>
+            <div class="flex  gap-5 mr-8">
+                <div class="bg-purple-600 flex text-white w-fit h-fit mt-6 ml-8 p-4 rounded-md shadow-lg course-item">
+                    <div class="flex flex-col">
+                        <h3 class="course-title">Math</h3>
+                        <p>Math</p>
+                        <p>Lessons:45</p>
+                        <p>Duration: 3 months</p>
+                    </div>
+                    <img src="images/lessons.png" alt="lessons inage" class="w-30 h-30 mt-2">
+                </div>
+                <div class="bg-purple-600 flex text-white w-fit h-fit mt-6 ml-8 p-4 rounded-md shadow-lg course-item">
+                    <div class="flex flex-col">
+                        <h3 class="course-title">Gen AI</h3>
+                        <p>Gen AI</p>
+                        <p>Lessons:45</p>
+                        <p>Duration: 3 months</p>
+                    </div>
+                    <img src="images/lessons.png" alt="lessons inage" class="w-30 h-30 mt-2">
+                </div>
+                <div class="bg-purple-600 flex text-white w-fit h-fit mt-6 ml-8 p-4 rounded-md shadow-lg course-item">
+                    <div class="flex flex-col">
+                        <h3 class="course-title">Language</h3>
+                        <p>English</p>
+                        <p>Lessons:45</p>
+                        <p>Duration: 3 months</p>
+                    </div>
+                    <img src="images/lessons.png" alt="lessons inage" class="w-30 h-30 mt-2">
+                </div>
+                </div>
+            </div>
+        </main>
+        <script src="dashboard.js"></script>
+        <script src="src/index.js"></script>
+</body>
+</html>

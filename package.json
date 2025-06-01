@@ -1,0 +1,22 @@
+{
+  "name": "edu-learn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "tailwindcss-cli build -i src/styles/tailwind.css -o dist/tailwind.css",
+    "watch:css": "tailwindcss-cli build -i src/styles/tailwind.css -o dist/tailwind.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@iconify/tailwind": "^1.2.0",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.4",
+    "tailwindcss": "^3.3.2",
+    "tailwindcss-cli": "^0.1.2"
+  }
+}
