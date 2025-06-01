@@ -1,6 +1,6 @@
 //import necessary libraries if needed, e.g., Firebase or Google API
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
-import { getAuth, createUserWithEmailAndPassword, signInWithPopup, GoogleAuthProvider } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
+import { getAuth, signInWithEmailAndPassword, onAuthStateChanged, signInWithPopup, GoogleAuthProvider } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
 // Firebase configuration
 const firebaseConfig = {
     apiKey: "AIzaSyDT2C7sumrDHanffOHXRsP2JKxQMgsfwcc",
@@ -34,12 +34,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // Replace with actual login logic
       //Firebase Login Logic
-      createUserWithEmailAndPassword(auth, email, password)
+      signInWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
           // Signed in 
           const user = userCredential.user;
-          alert("Login successful!");
-          console.log("User logged in:", user);
+          console.log("Login successful!");
+          alert("Welcome back :", user);
           form.reset();
           // Redirect to home page
           window.location.href = "dashboard.html";
@@ -49,8 +49,16 @@ document.addEventListener("DOMContentLoaded", function () {
           const errorMessage = error.message;
           alert("Error: " + errorMessage);
         });
-
     });
+
+    onAuthStateChanged(auth, (user) =>{
+      if (user){
+        console.log("User is logged in:", user.email);
+      }
+      else{
+        console.log("User is logged out!");
+      }
+    })
 
     googleBtn.addEventListener("click", function () {
       signInWithPopup(auth, provider)

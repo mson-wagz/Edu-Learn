@@ -1,0 +1,121 @@
+/* Base styles here (unchanged) */
+
+/* Media Queries for Responsive Design */
+
+/* Small devices (phones, 576px and below) */
+@media (max-width: 576px) {
+  /* Container adjustments */
+  .container {
+    padding: 0 1rem;
+  }
+  
+  /* Typography adjustments */
+  h1 {
+    font-size: 1.75rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
+  
+  /* Navigation adjustments */
+  nav {
+    flex-direction: column;
+  }
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem 0;
+  }
+  
+  /* Course cards */
+  .course-card {
+    width: 100%;
+  }
+  
+  /* Forms */
+  form {
+    padding: 1rem;
+  }
+  
+  /* Checkout page */
+  .checkout-container {
+    flex-direction: column;
+  }
+  .checkout-form, 
+  .order-summary {
+    width: 100%;
+  }
+  
+  /* Dashboard */
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Medium devices (tablets, 768px and below) */
+@media (max-width: 768px) {
+  /* Course grid */
+  .courses-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  /* Dashboard layout */
+  .dashboard-container {
+    flex-direction: column;
+  }
+  .dashboard-sidebar {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+  .dashboard-content {
+    width: 100%;
+  }
+  
+  /* Single course page */
+  .course-details {
+    flex-direction: column;
+  }
+  .course-info, 
+  .course-sidebar {
+    width: 100%;
+  }
+}
+
+/* Large devices (desktops, 992px and below) */
+@media (max-width: 992px) {
+  /* Header spacing */
+  header {
+    padding: 1rem 0;
+  }
+  
+  /* Course grid for 3 columns */
+  .courses-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  /* Footer layout */
+  footer .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-links {
+    margin-top: 1rem;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and below) */
+@media (max-width: 1200px) {
+  /* Container max width */
+  .container {
+    max-width: 960px;
+  }
+  
+  /* Course grid for 4 columns */
+  .courses-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

@@ -6,65 +6,108 @@
   <title>Edu Learn</title>
   <link href="./dist/tailwind.css" rel="stylesheet" />
 </head>
-<body class="bg-purple-100 ">
+<body class="bg-purple-100">
   <header>
-    <nav class="flex justify-start gap-44  items-center bg-white shadow-md h-20">
-      <img src="images/Logo.png" alt="logo" class="w-50 h-20 ml-4 mt-4" />
-      <ul class="flex align-items-center gap-11 font-semibold">
-        <li class="text-black text-base ">Main</li>
-        <li class="text-black text-base ">Courses</li>
-        <li class="text-black text-base ">Training</li>
-        <li class="text-black text-base ">About Us</li>
-        <li class="text-black text-base ">Contact</li>
-      </ul>
-      <div class="flex items-center  mr-3 gap-2">
-        <button class="bg-purple-500 text-white px-4 py-1 rounded-md hover:bg-purple-600 transition duration-300" id="sign-up-btn">
-          Sign Up
+    <nav class="bg-white shadow-md px-4 py-3">
+      <div class="flex justify-between items-center">
+        <img src="images/Logo.png" alt="logo" class="w-40 h-16" />
+
+        <!-- Hamburger Button -->
+        <button id="menu-toggle" class="text-purple-600 lg:hidden focus:outline-none">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
         </button>
-        <button class="border text-black px-4 py-1 rounded-md  transition duration-300 ml-2" id="log-in-btn">
-          Log In
-        </button>
+
+        <!-- Desktop Menu -->
+        <div class="hidden lg:flex lg:items-center lg:gap-11">
+          <ul class="flex gap-6 font-semibold">
+            <li class="text-black text-sm sm:text-base">Main</li>
+            <li class="text-black text-sm sm:text-base">Courses</li>
+            <li class="text-black text-sm sm:text-base">Training</li>
+            <li class="text-black text-sm sm:text-base">About Us</li>
+            <li class="text-black text-sm sm:text-base">Contact</li>
+          </ul>
+          <div class="flex items-center gap-2 ml-6">
+            <button class="bg-purple-500 text-white px-4 py-1 rounded-md hover:bg-purple-600 transition duration-300 text-sm sm:text-base" id="sign-up-btn">
+              Sign Up
+            </button>
+            <button class="border text-black px-4 py-1 rounded-md transition duration-300 text-sm sm:text-base" id="log-in-btn">
+              Log In
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden flex-col mt-4 space-y-4 lg:hidden">
+        <ul class="font-semibold space-y-2">
+          <li class="text-black text-base">Main</li>
+          <li class="text-black text-base">Courses</li>
+          <li class="text-black text-base">Training</li>
+          <li class="text-black text-base">About Us</li>
+          <li class="text-black text-base">Contact</li>
+        </ul>
+        <div class="flex flex-col gap-2 mt-2">
+          <button class="bg-purple-500 text-white px-4 py-1 rounded-md hover:bg-purple-600 transition duration-300" id="sign-up-btn">
+            Sign Up
+          </button>
+          <button class="border text-black px-4 py-1 rounded-md transition duration-300" id="log-in-btn">
+            Log In
+          </button>
+        </div>
       </div>
     </nav>
   </header>
-  <section class="flex flex-col items-center justify-center  bg-purple-100">
-    <p class="pt-16 text-2xl font-semibold">Learn on your Schedule</p>
-    <p class=" text-2xl font-semibold">Anytime, Anywhere</p>
-    <p class="text-base pt-3">We believe everyone has the capacity to be creative.EduLearn gives the chance to develop potential</p>
-    <p class="text-base pt-1">Empowering students with personalized, engaging, and accessible learning for a brighter future.</p>
-    <div>
-      <button class="bg-purple-500 text-white px-4 py-1 rounded-md hover:bg-purple-600 transition duration-300 mt-6">
+
+  <section class="flex flex-col items-center justify-center px-4 sm:px-6 md:px-12 bg-purple-100 text-center">
+    <p class="pt-16 text-xl sm:text-2xl font-semibold">Learn on your Schedule</p>
+    <p class="text-xl sm:text-2xl font-semibold">Anytime, Anywhere</p>
+    <p class="text-sm sm:text-base pt-3">We believe everyone has the capacity to be creative. EduLearn gives the chance to develop potential</p>
+    <p class="text-sm sm:text-base pt-1">Empowering students with personalized, engaging, and accessible learning for a brighter future.</p>
+
+    <div class="flex flex-wrap justify-center items-center mt-6 gap-3">
+      <button class="bg-purple-500 text-white px-4 py-1 rounded-md hover:bg-purple-600 transition duration-300 text-sm sm:text-base">
         Get Started
       </button>
-      <button class="border text-black px-4 py-1 rounded-md hover:bg-purple-200 transition duration-300 ml-2 mt-6">
+      <button class="border text-black px-4 py-1 rounded-md hover:bg-purple-200 transition duration-300 text-sm sm:text-base">
         Learn More
+      </button>
     </div>
-    <h2 class="pt-10 font-semibold">Choose your Learning Management Software</h2>
-    <div class="flex flex-wrap justify-center gap-6 mt-6 mb-36">
 
-      <div class="bg-green-200 h-fit w-64 rounded-md p-4 mt-6">
+    <h2 class="pt-10 font-semibold text-lg sm:text-xl md:text-2xl">Choose your Learning Management Software</h2>
+
+    <div class="flex flex-wrap justify-center gap-6 mt-6 mb-36">
+      <div class="bg-green-200 w-64 rounded-md p-4 mt-6">
         <h3 class="text-lg font-semibold text-green-600">Educational Standards</h3>
         <p class="text-sm pt-2">EduLearn has the highest educational standards, easily accessible and interesting.</p>
-        <p class="text-green-600 text-base"><strong>Read More</strong></p>
-
+        <p class="text-green-600 text-base mt-2"><strong>Read More</strong></p>
       </div>
-      <div class="bg-yellow-200 h-fit w-64 rounded-md p-4 mt-6">
-        <h3 class="text-lg font-semibold text-yellow-600">Study  System</h3>
+
+      <div class="bg-yellow-200 w-64 rounded-md p-4 mt-6">
+        <h3 class="text-lg font-semibold text-yellow-600">Study System</h3>
         <p class="text-sm pt-2">The study system is very flexible you can study anytime.</p>
         <p class="text-yellow-600 text-base pt-4"><strong>Read More</strong></p>
-
       </div>
-      <div class="bg-purple-200 h-fit w-64 rounded-md p-4 mt-6">
+
+      <div class="bg-purple-200 w-64 rounded-md p-4 mt-6">
         <h3 class="text-lg font-semibold text-purple-600">Educational Standards</h3>
         <p class="text-sm pt-2">EduLearn has the highest educational standards, easily accessible and interesting.</p>
-        <p class="text-purple-800 text-base"><strong>Read More</strong></p>
-
+        <p class="text-purple-800 text-base mt-2"><strong>Read More</strong></p>
       </div>
-
     </div>
-
   </section>
+  <script type="module" src="src/index.js"></script>
 
-  <script src="./src/index.js"></script>
+  <script>
+    // Toggle hamburger menu
+    const toggleBtn = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    toggleBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
 </body>
 </html>
